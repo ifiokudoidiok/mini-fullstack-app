@@ -6,13 +6,13 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true, // needed for sqlite
     connection: {
-      filename: '../server/data/market.db3',
+      filename: './server/data/market.db3',
     },
     migrations: {
-      directory: '../server/data/migrations'
+      directory: './server/data/migrations'
     },
     seeds: {
-      directory: '../server/data/seeds'
+      directory: './server/data/seeds'
     },
     // add the following
     pool: {
