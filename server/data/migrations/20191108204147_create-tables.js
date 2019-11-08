@@ -12,7 +12,8 @@ exports.up = function(knex) {
     })
     .createTable("product_categories", table => {
       table
-        .increments("product_categories_id")
+        .increments("product_categories_id");
+        table.integer("merchant_id")
         .unsigned()
         .notNullable()
         .references("merchant_id")
