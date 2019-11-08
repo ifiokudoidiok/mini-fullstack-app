@@ -1,0 +1,33 @@
+{
+  "name": "mini-fullstack-app",
+  "version": "1.0.0",
+  "description": "This is to quickly brush up/ overview my FE and BE skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifiokudoidiok/mini-fullstack-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifiokudoidiok/mini-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/ifiokudoidiok/mini-fullstack-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "nodemon": "^1.19.4"
+  }
+}
