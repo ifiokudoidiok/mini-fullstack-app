@@ -12,11 +12,13 @@ const friends = [
   { id: 3, name: "Joe" }
 ];
 
+server.use(express.static(__dirname + '/client/build'))
 server.use(express.json());
 server.use(cors());
-server.get("/", (req, res) => {
-  res.send("server is live!");
-});
+
+server.get('/', (req, res) => {
+  res.sendFile(__dirname + '/client/build/index.html')
+ })
 server.use("/api", logger, marketRouter);
 server.get("/api/friends", (req, res) => {
   res.json(friends);
