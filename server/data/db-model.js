@@ -38,6 +38,6 @@ where m.merchant_id = 2
 return db('product_categories as pc')
 .join('merchants as m','pc.merchant_id','m.merchant_id')
 .join('products as p','pc.product_id','p.product_id')
-.select('p.product_name ')
+.select('p.product_name ','p.product_description', 'p.product_price')
 .where({'m.merchant_id': merchant_id})
 }
