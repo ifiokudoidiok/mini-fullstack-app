@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 
+import Navbar from './components/Navigation';
+
 import "./App.css";
 
 function App() {
@@ -49,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar/>
       {productList.map(products => (
         <>
           <p>Name: {products.product_name}</p>
