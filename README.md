@@ -3,9 +3,9 @@ This is to quickly brush up/ overview my FE and BE skills.
 
 ## To test the app
 1. add a file called `.env` and create a variable to hold the port for the server *PORT=4000*
-2. `npm start` to start up the server 
+2. `npm i` to bring independencies and `npm start` to start up the server 
 3. `cd client` to go into the react app
-4. `npm start` to start the react app.
+4. `npm i` to bring independencies and `npm start` to start the react app.
 
 
 ## Some of the Skills demonstrate in project
